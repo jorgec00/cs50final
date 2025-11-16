@@ -3,6 +3,30 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block main %}
-  This will be the dashboard page.
+
+<!-- Build a container for a header-->
+<div class="header-container text-center">
+  <h3>Welcome to your Dashboard.</h3>
+</div>
+
+<!-- Main container -->
+<!--Build progress bars with labels and percentages that load with the page-->
+<div class="container py-4 text-center">
+  <div class="row">
+    <h4>Flight Certification Progress</h4>
+    <small class="text-muted">Track your progress towards each flight certification</small>
+  </div>
+</div>
+
+<!-- Card that will hold dynamic progress bars -->
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h2 class="h5 mb-3">Certificates</h2>
+    <div id="progressBars">
+      <!-- JS will inject progress items here -->
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}

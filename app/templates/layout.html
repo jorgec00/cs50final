@@ -43,7 +43,11 @@
                 </div>
             </header>
     {% endif %}
-    <main class="container py-5 text-center">{% block main %}{% endblock %}</main>
+    
+    <main class="container py-5">{% block main %}{% endblock %}</main>
+
+    <!-- Load project JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 
 </html>
